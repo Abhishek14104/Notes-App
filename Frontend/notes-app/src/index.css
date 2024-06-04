@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html{
+        font-family: "Playfair";
+    }
+}
+
+@layer components {
+    .input-box {
+        @apply w-full text-sm bg-transparent border-[1.5px] px-5 py-3 rounded mb-4 outline-none;
+    }
+
+    .btn-primary{
+        @apply w-full text-sm bg-[#7d5bedfb] text-white p-2 rounded my-1 hover:bg-[#4a319efb] transition-all ease-linear
+    }
+
+    .icon-btn{
+        @apply text-xl text-black cursor-pointer hover:text-primary
+    }
+
+    .input-label{
+        @apply text-xs text-slate-400;
+    }
+} 
